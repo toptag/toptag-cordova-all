@@ -1,0 +1,48 @@
+{
+   "appCache": {
+      "cache": ["index.html"],
+      "fallback": [],
+      "network": ["*"]
+   },
+   "archivePath": "archive",
+   "buildOptions": {
+      "debug": false,
+      "logger": false,
+      "minVersion": 3,
+      "product": "touch"
+   },
+   "buildPaths": {
+      "native": "build/native",
+      "package": "build/package",
+      "production": "build/production",
+      "testing": "build/testing"
+   },
+   "css": [{
+      "path": "resources/css/app.css",
+      "update": "delta"
+   }],
+   "id": "b47b003a-a0b6-4506-8a23-cd5071540378",
+   "ignore": [".svn$"],
+   "indexHtmlPath": "index.html",
+   "js": [
+      {"path": "cordova-android.js"},
+      {"path": "cordova-android.js"},
+      {"path": "cordova-android.js"},
+      {"path": "cordova-android.js"},
+      {"path": "cordova-android.js"},
+      {"path": "cordova-android.js"},
+      {"path": "touch/sencha-touch.js"},
+      {
+         "bundle": true,
+         "path": "app.js",
+         "update": "delta"
+      }
+   ],
+   "name": "TopTag",
+   "resources": [
+      "resources/images",
+      "resources/icons",
+      "resources/startup"
+   ],
+   "url": null
+}

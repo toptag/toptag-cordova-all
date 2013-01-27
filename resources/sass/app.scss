@@ -1,0 +1,92 @@
+@import 'sencha-touch/default/all';
+
+$dark: #2d2d2d;
+
+$page-bg-color: $dark;
+$base-color: $dark;
+$base-gradient: 'glossy';
+
+$toolbar-gradient: 'glossy';
+$toolbar-base-color: $dark;
+
+$list-color: #FFFFFF;
+$list-bg-color: $dark;
+$list-active-color: $dark;
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+
+$dottybackground: url(../../touch/resources/themes/images/default/dotgrid.png);
+
+// Your custom code goes here...
+
+div {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.channels {
+  img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    vertical-align: middle;
+  }
+  .x-dataview-item {
+    background: rgb(128, 128, 128);
+    margin: 2px;
+  }
+}
+.tag-list {
+  background: $dottybackground, $dark;
+  color: #FFFFFF;
+  .list-image {
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .list-detail-wrapper {
+    display: inline-block;
+  }
+  .list-title {
+    font-weight: bold;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  .list-subtitle {
+    line-height: 30px;
+    vertical-align: middle;
+  }
+  .list-created {
+    color: #DDDDDD;
+  }
+  .x-list-item {
+    background: $dark;
+    @include background-gradient($dark, 'glossy');
+  }
+}
+
+.share-panel {
+  background: $dottybackground;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.tag-detail {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+@include pictos-iconmask('twitter2');
+@include pictos-iconmask('mail');
+@include pictos-iconmask('chat_black1');
